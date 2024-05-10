@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor's Dashboard</title>
+    <style>
+        /* Reset CSS */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        /* Custom CSS */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+        
+        header {
+            background-color: #007bff;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        nav {
+            background-color: #fff;
+            padding: 10px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        nav a {
+            margin: 0 10px;
+            color: #333;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        nav a:hover {
+            color: #007bff;
+        }
+        
+        section {
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: auto;
+        }
+        
+        .card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom: 20px;
+            transition: transform 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .card h2 {
+            color: #007bff;
+            margin-bottom: 10px;
+        }
+        
+        .card ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .card ul li {
+            margin-bottom: 5px;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            nav {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            
+            nav a {
+                margin: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Doctor's Dashboard</h1>
+    </header>
+    <nav>
+        <a href="#">Appointments</a>
+        <a href="#">Patients</a>
+        <a href="#">Prescriptions</a>
+        <a href="#">Reports</a>
+        <a href="#">Settings</a>
+    </nav>
+    <section>
+        <div class="container">
+            <div class="card">
+                <h2>Welcome, Dr. Smith</h2>
+                <p>Your upcoming appointments:</p>
+                <ul>
+                    <li>John Doe - May 10th at 9:00 AM</li>
+                    <li>Jane Smith - May 12th at 2:30 PM</li>
+                </ul>
+                <p>Today's schedule:</p>
+                <ul>
+                    <li>Meeting with colleagues - 11:00 AM</li>
+                    <li>Lunch break - 1:00 PM</li>
+                    <li>Phone consultation - 3:30 PM</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
