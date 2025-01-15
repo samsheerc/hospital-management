@@ -96,7 +96,7 @@ def appointment(request):
                 return render(request, "inc/confirmation.html", context)
         return render(request, 'appointment.html', context)
 
-
+    
 def confiramation(request):
     return render(request,'confirmation.html')
 
@@ -169,7 +169,7 @@ def doctors_views(request):
         if form.is_valid():
             form.save()
             form=BookingForm()
-            return render(request,"confirmation.html",context)
+            return render(request,"inc/confirmation.html",context)
     return render(request, "our doctors.html",context)
 
 
